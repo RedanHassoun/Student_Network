@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.mohred.studentnetwork.R;
 import com.mohred.studentnetwork.common.AppUtils;
@@ -35,6 +36,7 @@ public class FragmentPeopleList extends Fragment
     private LoaderManager loaderManager;
     private View view;
     private ListView listViewAllPeople;
+    private TextView textNoPeopleFound;
 
     protected static final String GET_ORG_FRIENDS_COMPLETED_SUCCESFULLY = "get_org_friends_completed_succesfully";
     protected static final String GET_ORG_FRIENDS_FAILD = "get_org_friends_faild";
@@ -58,6 +60,7 @@ public class FragmentPeopleList extends Fragment
     {
         currentUser = DataManager.getInstance().getCurrentUser(getActivity());
         listViewAllPeople = (ListView) view.findViewById(R.id.simpleListView);
+        textNoPeopleFound = view.findViewById(R.id.text_no_people);
     }
 
     private void downloadAllPeopleList()
@@ -92,6 +95,9 @@ public class FragmentPeopleList extends Fragment
             try {
                 OrgFriendsList listPeople = (OrgFriendsList)data;
                 List<UserMessage> listOfPeople = getAllPeopleExceptCurrentUser(listPeople);
+                if((listOfPeople != null) && (listOfPeople.size()==0)){
+                    textNoPeopleFound.setVisibility(View.VISIBLE);
+                }
                 switch (listPeople.getStatus())
                 {
                     case GET_ORG_FRIENDS_COMPLETED_SUCCESFULLY:

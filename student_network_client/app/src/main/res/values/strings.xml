@@ -164,4 +164,7 @@
     <string name="share_with">Share with</string>
     <string name="share_subject">Take a look at Student Network</string>
     <string name="share_content">Student Network is an application that is intended for college and universities students, and it aims to make a global network to connect students with each other and incorporate a common community module that connects all of the students together. You can download it now from Google Play!</string>
+
+    <!-- People -->
+    <string name="no_people_found">No people found.</string>
 </resources>
