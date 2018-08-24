@@ -77,6 +77,9 @@ public class FragmentNewsFeed extends Fragment implements HTTPObserver,View.OnCl
     {
         progressBar.setVisibility(View.VISIBLE);
         String orgId = DataManager.getInstance().getCurrentUser(getContext()).getOrganizationId();
+        if(orgId == null){
+            throw new RuntimeException("Got a null organization id from the local storage");
+        }
         GetGlobalPostsMessage msg = new GetGlobalPostsMessage(orgId,0);
         DataManager.getInstance().getHttpExecutionPool().sentGETMessage(msg,this);
     }

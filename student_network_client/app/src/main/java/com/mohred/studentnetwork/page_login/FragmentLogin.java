@@ -540,7 +540,7 @@ public class FragmentLogin extends Fragment implements View.OnClickListener,
                 switch (status.getStatus()){
                     case LOGIN_OK:
                         User user = getUserDetails(status);
-
+                        Log.d(TAG,"user logged in : "+user.toString());
                         ((ActivityAuthenticate)getActivity()).openApp(user);
                         break;
                     default:

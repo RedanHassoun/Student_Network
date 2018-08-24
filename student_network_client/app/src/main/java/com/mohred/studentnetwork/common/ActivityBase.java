@@ -258,6 +258,11 @@ public class ActivityBase extends AppCompatActivity implements FragmentManager.O
         transaction.commit();
     }
 
+    public void popBackStack(FragmentManager manager){
+        FragmentManager.BackStackEntry first = manager.getBackStackEntryAt(0);
+        manager.popBackStack(first.getId(), FragmentManager.POP_BACK_STACK_INCLUSIVE);
+    }
+
     public void showProgressBar()
     {
         if(progressBar == null){

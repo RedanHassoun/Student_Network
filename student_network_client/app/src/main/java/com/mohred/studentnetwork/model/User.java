@@ -253,9 +253,14 @@ public class User
         // TODO - make the rest of fields
         return userMessage;
     }
+
     @Override
     public String toString()
     {
-        return "[ username="+username+", password="+password+" ]"+",isTutor = "+isTutor();
+        return "[ username="+username+
+                ", password="+password+
+                ",isTutor = "+isTutor()+
+                ",orgid = "+this.organizationId+
+                " ]";
     }
 }

@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
 
@@ -31,7 +32,7 @@ import static com.mohred.studentnetwork.common.AppConstants.FragmentNames.FRAGME
  */
 public class ActivityAuthenticate extends AppCompatActivity
 {
-    private static final String TAG = "datamanager";
+    private static final String TAG = "activity_auth";
     private FragmentManager manager;
     DataManager dataManager = DataManager.getInstance();
     private GoogleApiClient mGoogleApiClient;
@@ -183,6 +184,7 @@ public class ActivityAuthenticate extends AppCompatActivity
      */
     public void openApp(User user)
     {
+        Log.d(TAG,"Opening app for user:"+user);
         if(dataManager.getCurrentUser(this)==null)
             dataManager.setCurrentUser(user,this);
 

@@ -225,7 +225,9 @@ public class FragmentShowProfile extends Fragment  implements View.OnClickListen
         {
             case R.id.img_Edit:
                 if(getActivity() instanceof ActivityProfile)
-                    ((ActivityProfile)getActivity()).replaceFragment(FRAGMENT_EDIT_PROFILE,null,true);
+                    ((ActivityProfile)getActivity()).replaceFragment(FRAGMENT_EDIT_PROFILE,
+                                                                     null,
+                                                                     true);
                 else
                 {
                     Fragment fragment = new FragmentEditProfile();

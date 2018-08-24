@@ -10,8 +10,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
-
 import com.mohred.studentnetwork.R;
+import com.mohred.studentnetwork.common.ActivityBase;
 import com.mohred.studentnetwork.common.AppUtils;
 import com.mohred.studentnetwork.connection.UpdateUserProfileMessage;
 import com.mohred.studentnetwork.interfaces.ConnectionObject;
@@ -20,9 +20,7 @@ import com.mohred.studentnetwork.model.User;
 import com.mohred.studentnetwork.model.UserMessage;
 import com.mohred.studentnetwork.page_login.FragmentLogin;
 import com.squareup.picasso.Picasso;
-
 import de.hdodenhof.circleimageview.CircleImageView;
-
 import static com.mohred.studentnetwork.common.AppConstants.ConnectionConstants.STATUS_NOT_OK;
 import static com.mohred.studentnetwork.common.AppConstants.ConnectionConstants.STATUS_OK;
 
@@ -196,6 +194,7 @@ public class FragmentEditProfile extends Fragment implements View.OnClickListene
 
                     DataManager.getInstance().setCurrentUser(userSession,getContext());
                     AppUtils.showToastMessage(getContext(),getString(R.string.user_updated_successfully));
+                    ((ActivityBase)getActivity()).popBackStack(getFragmentManager());
                     break;
 
                 case STATUS_NOT_OK:
