@@ -91,6 +91,7 @@ public class AdapterTutorRequests extends ArrayAdapter<TutorRequest>
                     .error(R.drawable.ic_perm_identity_black_24dp)
                     .into(holder.imageProfile);
         }catch (Exception ex){
+            ex.printStackTrace();
             // SKIP
         }
 

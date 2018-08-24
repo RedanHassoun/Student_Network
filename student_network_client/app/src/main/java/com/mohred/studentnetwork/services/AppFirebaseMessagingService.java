@@ -39,7 +39,10 @@ public class AppFirebaseMessagingService extends FirebaseMessagingService
                 String isAccepted = remoteMessage.getData().get(JSON_KEY_IS_ACCEPTED);
                 sendNotification(remoteMessage.getNotification().getBody(),tutorID,courseID,isAccepted);
             }else{
-                sendNotification(remoteMessage.getNotification().getBody(),null,null,null);
+                sendNotification(remoteMessage.getNotification().getBody(),
+                                null,
+                                null,
+                                null);
             }
         }
     }
