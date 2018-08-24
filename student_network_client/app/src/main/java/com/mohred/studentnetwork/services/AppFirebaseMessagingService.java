@@ -13,10 +13,12 @@ import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 import com.mohred.studentnetwork.R;
 import com.mohred.studentnetwork.common.ActivityTutorAcceptedNotification;
+import com.mohred.studentnetwork.managers.DataManager;
 import com.mohred.studentnetwork.page_tutors.ActivityTutors;
 
 import static com.mohred.studentnetwork.common.AppConstants.ConnectionConstants.JSON_KEY_COURSE_NAME;
 import static com.mohred.studentnetwork.common.AppConstants.ConnectionConstants.JSON_KEY_IS_ACCEPTED;
+import static com.mohred.studentnetwork.common.AppConstants.ConnectionConstants.JSON_KEY_TARGET_USER_ID;
 import static com.mohred.studentnetwork.common.AppConstants.ConnectionConstants.JSON_KEY_TUTOR_ID;
 import static com.mohred.studentnetwork.common.AppConstants.ScreenArguments.ARG_GOTO_REQUESTS;
 
@@ -33,13 +35,25 @@ public class AppFirebaseMessagingService extends FirebaseMessagingService
 
         if(remoteMessage.getNotification()!=null)
         {
+            String currentUserId = DataManager.getInstance()
+                    .getCurrentUser(getBaseContext())
+                    .getId();
+
             if(remoteMessage.getData() != null) {
                 String tutorID = remoteMessage.getData().get(JSON_KEY_TUTOR_ID);
                 String courseID = remoteMessage.getData().get(JSON_KEY_COURSE_NAME);
                 String isAccepted = remoteMessage.getData().get(JSON_KEY_IS_ACCEPTED);
-                sendNotification(remoteMessage.getNotification().getBody(),tutorID,courseID,isAccepted);
+                String targetUserId = remoteMessage.getData().get(JSON_KEY_TARGET_USER_ID);
+                if(currentUserId.equals(targetUserId)){
+                    sendNotification(remoteMessage.getNotification().getBody(),
+                            tutorID,
+                            targetUserId,
+                            courseID,
+                            isAccepted);
+                }
             }else{
                 sendNotification(remoteMessage.getNotification().getBody(),
+                                null,
                                 null,
                                 null,
                                 null);
@@ -47,7 +61,7 @@ public class AppFirebaseMessagingService extends FirebaseMessagingService
         }
     }
 
-    private void sendNotification(String body,String tutorID,String courseName,String isAccepted)
+    private void sendNotification(String body,String tutorID,String targetUserId,String courseName,String isAccepted)
     {
         Intent intent;
         if(tutorID != null){

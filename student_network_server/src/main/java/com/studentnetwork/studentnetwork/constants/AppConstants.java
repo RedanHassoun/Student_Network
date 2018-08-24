@@ -74,6 +74,7 @@ public class AppConstants
 		public static final int REQUEST_DECLINED = 2;	
 		public static final String JSON_KEY_TUTOR_ID = "tutor_id";
 		public static final String JSON_KEY_COURSE_NAME = "course_name";
+		public static final String JSON_KEY_TARGET_USER_ID = "target_user_id";
 		public static final String JSON_KEY_IS_ACCEPTED = "is_accepted";
 		public static final String ACCEPTED_YES = "yes";
 		public static final String ACCEPTED_NO = "no";

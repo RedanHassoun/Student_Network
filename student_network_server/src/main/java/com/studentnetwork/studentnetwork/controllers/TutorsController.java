@@ -192,9 +192,12 @@ public class TutorsController
 		String message;
 		  
 		JSONObject data = new JSONObject();
-		data.put(AppConstants.ConnectionConstants.JSON_KEY_TUTOR_ID, tutor.getUserId());
-		data.put(AppConstants.ConnectionConstants.JSON_KEY_COURSE_NAME, course.getName());
-		
+		data.put(AppConstants.ConnectionConstants.JSON_KEY_TUTOR_ID,
+				tutor.getUserId());
+		data.put(AppConstants.ConnectionConstants.JSON_KEY_COURSE_NAME,
+				course.getName());
+		data.put(AppConstants.ConnectionConstants.JSON_KEY_TARGET_USER_ID,
+				tutorRequest.getStudentId());
 		if(tutorRequest.getStatus() == AppConstants.ConnectionConstants.REQUEST_ACCEPTED){
 			data.put(AppConstants.ConnectionConstants.JSON_KEY_IS_ACCEPTED, AppConstants.ConnectionConstants.ACCEPTED_YES);
 			message = ""+tutor.getUsername()+" "+AppConstants.GeneralStrings.ACCEPTED_YOUR_TUTOR_REQUEST_ON+course.getName();
