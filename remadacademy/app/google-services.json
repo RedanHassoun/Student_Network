@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "282479182624",
+    "firebase_url": "https://fir-student-network.firebaseio.com",
+    "project_id": "firebase-student-network",
+    "storage_bucket": "firebase-student-network.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282479182624:android:582ebf82abae317b",
+        "android_client_info": {
+          "package_name": "com.mohred.studentnetwork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282479182624-3fsa1teanvui4kqj1cko8iejn9q25ka6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mohred.studentnetwork",
+            "certificate_hash": "D549D301766D3383BED1364F9DC3EC9B96B6C892"
+          }
+        },
+        {
+          "client_id": "282479182624-hsh25q71t3vrhqncttrm3540bmrmti5o.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "282479182624-dat67668rihsiql4rvbn5ecd8ljei9sg.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "282479182624-nd6ublc6gq5mtk26mq8tlk5fijbj60e9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtITq9ol1WJrbQuKjGESEnbS5A20t9Tw8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282479182624-hsh25q71t3vrhqncttrm3540bmrmti5o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mohred.studentnetwork">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name="com.mohred.studentnetwork.app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <activity android:name=".page_tutors.ActivityTutors">
+        </activity>
+        <activity android:name=".page_friends.ActivityFindPeople" >
+        </activity>
+        <activity android:name=".page_main.ActivityMain">
+        </activity>
+        <activity android:name=".page_intro.ActivityIntro">
+        </activity>
+        <activity android:name=".page_login.ActivityAuthenticate">
+        </activity>
+        <activity android:name=".page_splash.ActivitySplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".page_profile.ActivityProfile">
+        </activity>
+        <activity android:name=".common.ActivityTutorAcceptedNotification">
+        </activity>
+        <activity android:name=".page_courses.ActivityCourses">
+        </activity>
+        <activity android:name=".page_fullscreen_image.ActivityFullScreenImage">
+        </activity>
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".services.AppFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".services.AppFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <!-- *******  TEMP  ********** -->
+        <activity android:name=".temp.UsersActivity">
+        </activity>
+
+        <activity android:name=".temp.TempUploadActivity">
+        </activity>
+
+        <activity android:name=".temp.TempLoaderActivity">
+
+        </activity>
+        <!-- *******  TEMP  ********** -->
+
+    </application>
+
+</manifest>

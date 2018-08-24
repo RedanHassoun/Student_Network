@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="50dp"
+    android:paddingBottom="50dp">
+
+    <LinearLayout
+        android:id="@+id/layout_main"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/the_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/become_tutor"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:layout_gravity="left"
+                style="@style/font_medium"
+                />
+
+            <ImageButton
+                android:id="@+id/button_exit"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_action_delete_sign_48px"
+                android:background="@color/white"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/text_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:hint="@string/write_about_your_experience"
+            style="@style/edit_text_label"/>
+
+        <EditText
+            android:id="@+id/text_communication_str"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:hint="@string/how_should_students_comm_with_you"
+            style="@style/edit_text_label"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_courses_to_tutor"
+            android:layout_margin="5dp"
+            style="@style/font_small"/>
+         <com.mohred.studentnetwork.page_tutors.MultiSpinnerSearch
+                android:id="@+id/spinner_choose_courses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_add_white_24dp"
+                android:gravity="left|center_vertical"  />
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_cancel"
+                android:layout_weight="5"
+                android:layout_margin="10dp"
+                android:text="@string/cancel"
+                style="@style/nav_button_negative"
+                android:gravity="center" />
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_submit"
+                android:layout_weight="5"
+                android:layout_margin="10dp"
+                android:text="@string/submit"
+                style="@style/nav_button_general"
+                android:gravity="center" />
+        </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

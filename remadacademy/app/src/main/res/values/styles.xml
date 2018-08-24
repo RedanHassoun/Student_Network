@@ -1,0 +1,99 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/light_blue</item>
+        <item name="colorPrimaryDark">@color/light_blue</item>
+        <item name="colorAccent">@color/light_blue</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--<item name="android:fontFamily">sans-serif-light</item>-->
+    </style>
+
+    <style name="font_big" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="font_small" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="font_tiny" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="font_medium" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="nav_button_general" parent="Widget.AppCompat.ActionButton">
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@color/light_blue</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:drawablePadding">5dp</item>
+    </style>
+
+    <style name="nav_button_negative" parent="Widget.AppCompat.ActionButton">
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@color/light_grey</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:drawablePadding">5dp</item>
+    </style>
+
+    <style name="edit_text_label" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textSize">17sp</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="hintAnimationEnabled">false</item>
+    </style>
+
+    <!-- The dialog animation themes -->
+    <style name="GrowFromPointTheme" parent="@android:style/Theme.Panel">
+        <item name="android:windowAnimationStyle">@style/AnimationIn.Window</item>
+    </style>
+
+    <style name="AnimationIn.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/anim_in</item>
+    </style>
+
+    <style name="NavigationViewStyle">
+        <item name="android:textSize">18sp</item> <!-- menu item text size-->
+        <item name="android:listPreferredItemHeightSmall">40dp</item><!-- menu item height-->
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="menu_floating_label_style">
+
+    </style>
+
+    <!-- For the custom spinner -->
+    <style name="MaterialSpinner" parent="Widget.AppCompat.Spinner">
+    </style>
+
+    <style name="myDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowTitleStyle">@style/myDialogTitle</item>
+    </style>
+
+    <style name="myDialogTitle" parent="@android:style/TextAppearance.DialogWindowTitle">
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="DialogWindowTitle">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.DialogWindowTitle</item>
+    </style>
+
+
+
+</resources>

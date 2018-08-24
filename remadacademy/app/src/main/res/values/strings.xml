@@ -1,0 +1,167 @@
+<resources>
+    <!-- General -->
+    <string name="app_name">Student Network</string>
+    <string name="facebook_app_id">335004990225645</string>
+    <string name="login">Login</string>
+    <string name="skip">Skip</string>
+    <string name="loading">Loading...</string>
+    <string name="login_with_facebook">Login with facebook</string>
+    <string name="login_with_google">Login with google</string>
+    <string name="or">OR</string>
+    <string name="register">Register</string>
+    <string name="invalid_email">The email specified does not exist</string>
+    <string name="invalid_password">Invalid password specified</string>
+    <string name="password">Password</string>
+    <string name="faculty">Faculty</string>
+    <string name="organization">Organization</string>
+    <string name="email">E-mail</string>
+    <string name="insert_credintials_to_register">Insert your credentials in order to register :</string>
+    <string name="full_name">Full name</string>
+    <string name="username">Username</string>
+    <string name="phone_number">Phone number</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="password_confirm">Confirm password</string>
+    <string name="already_have_an_account">Already have an account ? </string>
+    <string name="validation_err_full_name">Wrong username</string>
+    <string name="validation_err_username">Wrong username</string>
+    <string name="validation_err_email">Wrong e-mail</string>
+    <string name="validation_err_password">Wrong password</string>
+    <string name="validation_err_password_not_match">Password not match</string>
+    <string name="wrong_input">Wrong input</string>
+    <string name="ok">Ok</string>
+    <string name="fb_login_protocol_scheme">fb335004990225645</string>
+    <string name="error_connecting_to_server">An error has occurred while connecting to server</string>
+    <string name="choose_orginization">Choose your organization</string>
+    <string name="choose_your_faculty">Choose your faculty</string>
+    <string name="choose_an_organization">Choose an organization</string>
+    <string name="choose_a_faculty">Choose a faculty</string>
+    <string name="cant_register_already_exist">Cannot register this account already exists</string>
+    <string name="cant_register_server_error">An error occurred while trying to register please try again later</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="home_page">Home page</string>
+    <string name="profile_page">My profile</string>
+    <string name="logout">Logout</string>
+    <string name="whats_on_your_mind">what\'s on your mind ?</string>
+    <string name="attach_photo">Attach photo</string>
+    <string name="attach_link">Attach link</string>
+    <string name="pick_image_intent_text">Select photo</string>
+    <string name="new_post">New post</string>
+    <string name="post">Post</string>
+    <string name="cancel">Cancel</string>
+    <string name="you_have_to_write_a_status">You have to write a status</string>
+    <string name="error_uploading_image">An error occurred while uploading the image</string>
+    <string name="server_client_id">282479182624-hsh25q71t3vrhqncttrm3540bmrmti5o.apps.googleusercontent.com</string>
+    <string name="post_uploaded_successfully">Post uploaded successfully</string>
+    <string name="insert_URL_link">Please type a link</string>
+    <string name="link">Link</string>
+    <string name="please_enter_valid_url">Please enter a valid url</string>
+    <string name="type">Type</string>
+    <string name="unable_to_connect_to_server">The application is unable to connect to server please try again later</string>
+    <string name="send">Send</string>
+    <string name="not_set">Not set</string>
+
+    <!-- Main page -->
+    <string name="empty_feed">No posts found.</string>
+
+    <!-- Login -->
+    <string name="must_specify_facility_organization">Must specify facility and organization</string>
+
+    <!-- Profile -->
+    <string name="edit_profile">Edit profile</string>
+    <string name="enter_username">Enter username</string>
+    <string name="enter_full_name">Enter full name</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_password">Enter password</string>
+    <string name="enter_about">Enter about</string>
+    <string name="user_name_validation">Username input is not correct</string>
+    <string name="user_updated_successfully">User updated successfully</string>
+    <string name="error_ocurred_while_updating_user">An error occurred while updating user</string>
+    <string name="apply">Apply</string>
+    <string name="fullname_not_set">Full name not set</string>
+    <string name="mail_not_set">Mail not set</string>
+    <string name="password_not_set">Password not set</string>
+    <string name="you_have_to_choose_photo">You have to choose a photo to upload</string>
+    <string name="error_occurred_while_uploading_image">An error occurred while uploading the image</string>
+    <string name="image_updated_successfully">Image updated successfully</string>
+    <string name="profile_image_update">Profile image update</string>
+
+    <!-- Courses -->
+    <string name="course_list_empty">No courses found</string>
+    <string name="courses_page">Courses</string>
+    <string name="about_course">About</string>
+    <string name="course_material">Course material</string>
+    <string name="points">Points</string>
+    <string name="teacher">Teacher</string>
+    <string name="enter_material_title">Enter material title</string>
+    <string name="upload">Upload</string>
+    <string name="you_must_specify_title">You must specify a title</string>
+    <string name="material_uploaded_succesfully">Material uploaded successfully</string>
+    <string name="error_ocurred_on_server_try_later">An error occurred on server please try again later</string>
+    <string name="find_people">Find people</string>
+    <string name="new_course_material">New course material</string>
+    <string name="no_course_material">No course material found</string>
+    <string name="no_course_about_found">No description found for this course.</string>
+
+    <!-- Introduction screeen -->
+    <string name="intro_desc_first">Student Network is intended for college and universities students,  it aims to make a global network to connect students with each other </string>
+    <string name="intro_desc_second">Find tutors and become a tutor by a single click</string>
+    <string name="intro_desc_third">Find and share course materials and other important updates</string>
+
+
+    <!-- Tutors -->
+    <string name="tutoring">Tutoring</string>
+    <string name="tutors_list">Tutors list</string>
+    <string name="tutored_coures_list">Tutored courses</string>
+    <string name="tutored_students_list">Tutored students</string>
+    <string name="open_tutoring_profile">Open tutoring profile</string>
+    <string name="like_tutor">Like tutor</string>
+    <string name="liked_tutor_success">liked tutor successfully</string>
+    <string name="already_liked_tutor">Already liked tutor cant like twice</string>
+    <string name="request_tutoring">Request tutoring</string>
+    <string name="about">about</string>
+    <string name="how_to_contact">HOW TO CONTACT</string>
+    <string name="date_started">DATE STARTED</string>
+    <string name="likes">Likes</string>
+    <string name="become_tutor">Become a tutor</string>
+    <string name="write_about_your_experience">Write something about your experience</string>
+    <string name="how_should_students_comm_with_you">How should students communicate with you</string>
+    <string name="submit">Submit</string>
+    <string name="choose_courses_to_tutor">Choose courses to tutor</string>
+    <string name="type_to_search">Search courses</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="requested_tutoring_on">requested tutoring on</string>
+    <string name="requests">Requests</string>
+    <string name="no_requests_found">No requests found</string>
+    <string name="you_accepted_tutor_request">You have accepted this tutoring request</string>
+    <string name="you_declined_tutor_request">You have declined this tutoring request</string>
+    <string name="no_courses_found">No courses found</string>
+    <string name="you_have_to_write_something_about_yourself">You have to write something about yourself</string>
+    <string name="you_have_to_write_communication_desciption">You have to write a communication description</string>
+    <string name="you_have_to_select_atleast_one_coures">You have to select at least one course</string>
+    <string name="select_courses_to_be_tutored">Select courses to be tutored</string>
+    <string name="courses_list">Courses list</string>
+    <string name="select_course">Select course</string>
+    <string name="you_must_select_course">You must select a course</string>
+    <string name="general_error_message">An error occurred, please try again later</string>
+    <string name="contact_details">Contact details</string>
+    <string name="accepted_your_tutor_request_on">accepted your tutor request on course:</string>
+    <string name="rejected_your_tutor_request_on">rejected your tutor request on course:</string>
+    <string name="select_courses">Select courses ...</string>
+    <string name="tutor_adding_succedd_message">Congratulations, you have become a tutor</string>
+    <string name="no_tutored_students_found">No tutored students found</string>
+    <string name="no_tutors_found">No tutors found</string>
+    <string name="no_tutored_courses_found">No tutored courses found</string>
+    <string name="edit_tutor_profile">Edit tutor profile</string>
+    <string name="please_fill_fields">Please fill all the fields</string>
+    <string name="profile_updated_successfully">Profile updated successfully</string>
+    <string name="requested_tutoring_successfully">Requested tutoring successfully</string>
+    <string name="already_sent_tutor_request">You already sent a tutor request that is not responded yet</string>
+
+    <!-- Share -->
+    <string name="share_app">Share app</string>
+    <string name="share_with">Share with</string>
+    <string name="share_subject">Take a look at Student Network</string>
+    <string name="share_content">Student Network is an application that is intended for college and universities students, and it aims to make a global network to connect students with each other and incorporate a common community module that connects all of the students together. You can download it now from Google Play!</string>
+</resources>

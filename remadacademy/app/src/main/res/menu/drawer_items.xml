@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/drawer_home"
+            android:checked="true"
+            android:icon="@drawable/ic_home_white_24dp"
+            android:title="@string/home_page" />
+
+        <item
+            android:id="@+id/drawer_profile"
+            android:checked="true"
+            android:icon="@drawable/ic_person_white_24dp"
+            android:title="@string/profile_page" />
+
+        <item
+            android:id="@+id/drawer_tutors"
+            android:checked="true"
+            android:icon="@drawable/ic_school_white_24dp"
+            android:title="@string/tutoring"/>
+
+        <item
+            android:id="@+id/drawer_courses"
+            android:checked="true"
+            android:icon="@drawable/ic_library_books_white_24dp"
+            android:title="@string/courses_page" />
+
+        <item
+            android:id="@+id/drawer_find_people"
+            android:checked="true"
+            android:icon="@drawable/ic_search_white_24dp"
+            android:title="@string/find_people" />
+
+        <item
+            android:id="@+id/drawer_share_app"
+            android:checked="true"
+            android:icon="@drawable/ic_share_white_24dp"
+            android:title="@string/share_app" />
+
+        <item
+            android:id="@+id/drawer_logout"
+            android:checked="true"
+            android:icon="@drawable/ic_exit_to_app_white_24dp"
+            android:title="@string/logout" />
+    </group>
+</menu>

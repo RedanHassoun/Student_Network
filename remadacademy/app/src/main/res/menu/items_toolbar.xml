@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Notifications icon - appears always
+    <item
+        android:id="@+id/action_notifications"
+        android:icon="@drawable/ic_action_musical_bell_outline"
+        android:title="@string/push_notifications"
+        app:showAsAction="ifRoom"/>-->
+
+
+
+</menu>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/item_image"
+        android:layout_width="@dimen/image_small_width"
+        android:layout_height="@dimen/image_small_height"
+        android:src="@drawable/ic_perm_identity_black_24dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_small_height">
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:text="name"
+            style="@style/font_small"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:id="@+id/text_course_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="course name"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"/>
+
+
+        <TextView
+            android:id="@+id/text_date_started"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="date started"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:layout_margin="5dp"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

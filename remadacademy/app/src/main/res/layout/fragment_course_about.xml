@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon_course"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_course" />
+
+        <TextView
+            android:id="@+id/text_course_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/icon_course"
+            android:layout_toRightOf="@id/icon_course"
+            style="@style/font_medium"/>
+
+
+        <TextView
+            android:id="@+id/text_course_facuility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_course_name"
+            android:layout_toRightOf="@id/icon_course"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/about_not_found"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/font_small"
+        android:visibility="gone"
+        android:text="@string/no_course_about_found"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/text_points"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/font_small"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/text_teacher_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/font_small"
+        android:layout_margin="5dp"/>
+
+
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/font_small"
+        android:layout_margin="5dp"/>
+
+</LinearLayout>

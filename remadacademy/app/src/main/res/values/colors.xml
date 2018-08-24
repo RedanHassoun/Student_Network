@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6dcae1</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blue_light">#1894db</color>
+    <color name="white">#ffffff</color>
+    <color name="light_blue">#6dcae1</color>
+    <color name="light_grey">#9E9E9E</color>
+    <color name="black">#000000</color>
+    <color name="blue">#1565C0</color>
+    <color name="yellow_dark">#cf9b20</color>
+    <color name="gray_transparent">#209E9E9E</color>
+    <color name="red">#ff0000</color>
+    <color name="color_disabled">#817c7c</color>
+
+    <!-- News feed -->
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+
+    <!-- Courses selection -->
+    <color name="list_even">#AAAAAA</color>
+    <color name="list_odd">#E1E2E2</color>
+    <color name="list_selected">#455FB6</color>
+    <color name="list_header">#99979C</color>
+
+</resources>
