@@ -8,7 +8,7 @@ study related materials, ideas and courses.
 
 
 ❏	User profile -  with the ability to upload personal information, image and study-related accomplishments. <br/> 
-![tutor_profile](https://user-images.githubusercontent.com/13778567/44946921-e2579a80-ae0d-11e8-841b-a48dcf6b1ca8.png)
+![tutor_profile](https://user-images.githubusercontent.com/13778567/44946950-63169680-ae0e-11e8-9947-f5b5e4a298ea.png)
 ❏	Activity Feed - displays the most interesting, recent activity taking place on the college.  <br/> 
 ❏	Tutor module - the application will provide the ability to search student tutors, each student can publish himself as a tutor
 in a specific course, so that other students can lookup for a tutor using a simple search bar.  <br/> 
