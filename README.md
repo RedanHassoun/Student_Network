@@ -16,4 +16,4 @@ in a specific course, so that other students can lookup for a tutor using a simp
 ![tutor_list](https://user-images.githubusercontent.com/13778567/44946978-d4eee000-ae0e-11e8-8364-b095cb199b3b.png) <br/> 
 ❏	Course module - the users can search for a specific course and enter the course page, this page supplies all of the shared 
 materials and references for that course.  <br/>
-![courses_list](https://user-images.githubusercontent.com/13778567/44946998-15e6f480-ae0f-11e8-904d-303781ca2353.png) <br/>
+![course_material](https://user-images.githubusercontent.com/13778567/44947287-ab848300-ae13-11e8-9ec8-3e9c78ce6542.png) <br/>
